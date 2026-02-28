@@ -25,6 +25,7 @@ public class Calculator {
         }   
     }
   }
+    
      // INPUT VALIDATION (INT)
         static int getIntInput(){
         while(true){
@@ -54,7 +55,7 @@ public class Calculator {
   }
         
      // INPUT VALIDATION (UseAgain)
-        static int UA(){
+        static int UA(){ //UA means USE AGAIN
         while(true){
             try{
             int input = sc.nextInt();
@@ -81,7 +82,6 @@ public class Calculator {
     public static void main (String[] args){
         
         calculator();
-        
       }   
     
     // USE AGAIN
@@ -147,7 +147,6 @@ public class Calculator {
                                 break;
                     case 4: System.out.println("You chose Division!");                
                                 break;
-
                 }
                 
             System.out.print("Enter first number: ");
@@ -179,15 +178,18 @@ public class Calculator {
             if (validOperation) {
                 System.out.println("The result is: " + result);
                 useAgain();
-            }
-        }
-      }
+             }
+          }
+       }
+        
         sc.close();
-    }
+        
+   }
 
     public static double modulus(double a, double b) {
         return a % b;
     }
+    
     public static double add(double a, double b) {
         return a + b;
     }
@@ -203,4 +205,5 @@ public class Calculator {
     public static double divide(double a, double b) {
         return a / b;
     }
+    
 }
