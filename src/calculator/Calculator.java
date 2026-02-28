@@ -149,6 +149,7 @@ public class Calculator {
                                 break;
 
                 }
+                
             System.out.print("Enter first number: ");
             double num1 = getDoubleInput();
             System.out.print("Enter second number: ");
